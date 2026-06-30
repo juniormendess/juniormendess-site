@@ -1,0 +1,18 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #0d0d0d;
+color: white;
+}
+
+/* CENTRO */
+body {
+text-align: center;
+padding: 50px;
+}
+
+/* TÍTULO */
+h1 {
+color: gold;
+font-size: 40px;
+}
