@@ -1,90 +1,118 @@
 body {
 margin: 0;
 font-family: Arial, sans-serif;
-background: radial-gradient(circle at top, #1a1a1a, #000);
+background: #050505;
 color: white;
 text-align: center;
 }
 
-/* HERO */
+/* HERO GRANDE */
 .hero {
-min-height: 100vh;
+height: 100vh;
+position: relative;
 display: flex;
-flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 40px;
+background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80');
+background-size: cover;
+background-position: center;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.7);
+}
+
+.content {
+position: relative;
+z-index: 2;
+}
+
+.profile {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin: auto;
+background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?auto=format&fit=crop&w=400&q=80');
+background-size: cover;
+border: 3px solid gold;
+box-shadow: 0 0 20px gold;
 }
 
 .logo {
-font-size: 110px;
+font-size: 80px;
 color: gold;
 font-weight: bold;
-text-shadow: 0 0 30px gold;
-margin-bottom: 10px;
+margin-top: 10px;
+text-shadow: 0 0 20px gold;
 }
 
 h1 {
-font-size: 65px;
+font-size: 55px;
 margin: 10px 0;
 }
 
 .slogan {
-font-size: 20px;
-opacity: 0.8;
-margin-bottom: 30px;
+opacity: 0.9;
+margin-bottom: 20px;
 }
 
+/* BOTÕES */
 .buttons a {
 display: inline-block;
-margin: 12px;
-padding: 16px 28px;
+margin: 10px;
+padding: 14px 24px;
 background: gold;
 color: black;
 text-decoration: none;
 font-weight: bold;
-border-radius: 12px;
+border-radius: 10px;
 transition: 0.3s;
 }
 
 .buttons a:hover {
 transform: scale(1.1);
-box-shadow: 0 0 20px gold;
+box-shadow: 0 0 15px gold;
 }
 
-section {
-padding: 80px 20px;
+/* SEÇÕES */
+.section {
+padding: 70px 20px;
 }
 
 h2 {
 color: gold;
 font-size: 32px;
-margin-bottom: 20px;
 }
 
+/* MÚSICAS */
 .music {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 20px;
 padding: 20px;
 }
 
 .card {
 background: #111;
-padding: 30px;
-border-radius: 15px;
+padding: 25px;
+border-radius: 12px;
 border: 1px solid gold;
 transition: 0.3s;
 }
 
 .card:hover {
-transform: scale(1.08);
+transform: scale(1.05);
 box-shadow: 0 0 15px gold;
 }
 
+/* FOOTER */
 footer {
-padding: 25px;
+padding: 20px;
 background: black;
 opacity: 0.8;
-margin-top: 40px;
-} 
+}
