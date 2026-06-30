@@ -1,7 +1,7 @@
 body {
 margin: 0;
 font-family: Arial, sans-serif;
-background: #0a0a0a;
+background: #050505;
 color: white;
 text-align: center;
 }
@@ -13,29 +13,33 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background: radial-gradient(circle, #1a1a1a, #000);
+background: radial-gradient(circle, #1c1c1c, #000);
 }
 
 .logo {
-font-size: 80px;
+font-size: 90px;
 color: gold;
 font-weight: bold;
+letter-spacing: 5px;
+text-shadow: 0 0 20px gold;
 }
 
 h1 {
-font-size: 55px;
+font-size: 60px;
 margin: 10px 0;
 }
 
 .slogan {
 opacity: 0.8;
 margin-bottom: 25px;
+font-size: 18px;
 }
 
+/* BOTÕES */
 .buttons a {
 display: inline-block;
 margin: 10px;
-padding: 14px 22px;
+padding: 14px 25px;
 background: gold;
 color: black;
 text-decoration: none;
@@ -46,17 +50,21 @@ transition: 0.3s;
 
 .buttons a:hover {
 transform: scale(1.05);
+box-shadow: 0 0 15px gold;
 }
 
-section {
+/* SEÇÕES */
+.section {
 padding: 60px 20px;
 }
 
 h2 {
 color: gold;
+font-size: 30px;
 margin-bottom: 20px;
 }
 
+/* MÚSICAS */
 .music {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -66,13 +74,21 @@ padding: 0 20px;
 
 .card {
 background: #111;
-padding: 20px;
+padding: 25px;
 border-radius: 12px;
 border: 1px solid gold;
+transition: 0.3s;
 }
 
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0 0 10px gold;
+}
+
+/* FOOTER */
 footer {
 padding: 20px;
 background: black;
 opacity: 0.7;
+margin-top: 30px;
 }
